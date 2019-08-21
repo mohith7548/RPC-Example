@@ -12,22 +12,22 @@ public class MathFunRemote extends UnicastRemoteObject implements MathFun {
     }
 
     @Override
-    public int sub(int x, int y) throws RemoteException {
+    public int sub(int x, int y) {
         return x - y;
     }
 
     @Override
-    public int mul(int x, int y) throws RemoteException {
+    public int mul(int x, int y) {
         return x * y;
     }
 
     @Override
-    public double div(int x, int y) throws RemoteException {
+    public double div(int x, int y) {
         return x / y;
     }
 
     @Override
-    public int mod(int x, int y) throws RemoteException {
-        return x % y;
+    public int mod(int x, int y) {
+        return (x % y);
     }
 }
